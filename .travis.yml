@@ -10,16 +10,9 @@ os:
   - linux
   - osx
 
-install:
-  - npm ci
-
 script:
   - npm run test
   - npx codecov
-
-cache:
-  directories:
-    - "$HOME/.npm"
 
 branches:
   only:
